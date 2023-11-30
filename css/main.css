@@ -41,10 +41,10 @@ body {
 }
 
 body {
-	background: #000000;
+	background: rgb(252, 252, 252);
 	font: 16px/30px "merriweather-regular", serif;
 	font-weight: normal;
-	color: #575859;				/*文章字體*/
+	color: #575859;				/*文章內容字體顏色*/
 }
 
 /* links 
@@ -62,7 +62,7 @@ a:visited {
 
 a:hover,
 a:focus {
-	color: #fdc501;
+	color: rgb(134,150,167);
 }
 
 /* Typography
@@ -75,6 +75,14 @@ h5,
 h6 {
 	font-family: "raleway-heavy", sans-serif;
 	color: #FFFFFF;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	margin: 18px 0 15px;
+}
+
+h4{
+	font-family: "raleway-heavy", sans-serif;
+	color: #757575;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
 	margin: 18px 0 15px;
@@ -267,7 +275,7 @@ dl {
 
 dt {
 	margin: 0;
-	color: #fdc501;
+	color: rgb(134,150,167);
 }
 
 dd {
@@ -355,7 +363,7 @@ img.pull-left {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #1c1c17;
+	background: #d6e3f1;
 	z-index: 9999999;
 	height: 100%;
 	width: 100%;
@@ -370,20 +378,19 @@ img.pull-left {
 	position: absolute;
 	top: 50%;
 	left: 45%;
-	color: rgb(241, 201, 0);
+	color: rgb(134,150,167);
 	font-family: 'Arial Black', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	/*width: 50px;
 	height: 50px;
 	margin-left: -25px;
 	margin-top: -25px;
 	background-color: rgb(0,180,188);
 	border-radius: 50%;*/
-	-webkit-animation: sk-rotateplane 1.5s infinite ease-in-out;
-	animation: sk-rotateplane 3s infinite ease-in-out;
+	-webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+	animation: sk-rotateplane 1.5s infinite ease-in-out;
 	overflow: hidden;
 }
-
 @-webkit-keyframes sk-rotateplane {
 	0% {
 		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
@@ -416,7 +423,6 @@ img.pull-left {
 }
 
 
-
 /* 
 /* 04. =forms
 /* =================================================================== */
@@ -446,7 +452,7 @@ select {
 	margin: 0 0 12px 0;
 	border: 0;
 	outline: none;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	color: #a3a4a6;
 	font-family: "raleway-bold", sans-serif;
 	font-size: 15px;
@@ -484,14 +490,14 @@ input[type="button"] {
 	font: 16px/30px "raleway-heavy", sans-serif;
 	padding: 9px 16px;
 	margin: 0 3px 6px 0;
-	background: #fdc501;
+	background: rgb(150,164,139);
 	color: #000000;
 	text-decoration: none;
 	cursor: pointer;
 	height: auto;
 	text-align: center;
 	border: none;
-	-webkit-appearance: none;
+	/*-webkit-appearance: none;*/
 	-webkit-font-smoothing: inherit;
 	border-radius: 3px;
 	-moz-transition: all 0.3s ease-in-out;
@@ -507,7 +513,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
 	color: #FFFFFF;
-	background: #e64e04;
+	background: rgb(0,180,188);
 }
 
 label,
@@ -568,13 +574,13 @@ hr {
 	font: 25px/30px "raleway-heavy", sans-serif;		/*小文章標題字體大小*/
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
-	color: #FFFFFF;
+	color: rgb(150,164,139);
 	margin-bottom: 30px;
 	margin-top: 18px;
 }
 
 .section-head h1 span {
-	color: #fdc501;
+	color: rgb(150,164,139);		/*標題內容的下方橫線 rgb(134,150,167)*/
 	position: relative;
 	left: 3px;
 }
@@ -584,8 +590,8 @@ hr {
 	width: 95%;
 }
 
-.section-head:hover h1 + hr {		/*小標題底下的線條*/
-	border-color: #e64e04;
+.section-head:hover h1 + hr {
+	border-color: rgb(150,164,139);		/*標題內容的下方點點*/
 	width: 120px;
 	text-align: left;
 }
@@ -643,13 +649,13 @@ header {
 	
 }
 header.opaque {
-	background: #525354;  /*湖人的rgb(85, 37, 130);  勇士的#1D428A*/			/*往下滑後的nav bar變色*/
+	background: rgb(216, 202, 175);  /*主要色塊*/			/*往下滑後的nav bar變色*/
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* header logo */
 header .logo {
-	background: #fdc501;
+	background:rgb(216, 202, 175); /*首頁的點擊logo*/
 	float: left;
 	width: auto;
 	margin-left: 15px;
@@ -664,15 +670,15 @@ header .logo {
 header .logo a {
 	display: block;
 	margin: 0;
-	padding: 0;
+	padding: 0; 
 	border: none;
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
 	width: 114px;
 	height: 66px;
-	background: url("../images/Basketball_icon.png") no-repeat center;
-	background-size: 61px 14px;
+	background: url("../images/basketball_icon.png") no-repeat center;
+	background-size: 130px 45px;
 }
 
 /* header social */
@@ -695,11 +701,11 @@ header .header-social li {
 }
 
 header .header-social li a {
-	color: #FFFFFF;
+	color: rgb(150,164,139);
 }
 
 header .header-social li a:hover {
-	color: #fdc501;
+	color: rgb(124,139,111);
 }
 
 /* media queries:  
@@ -713,7 +719,7 @@ header .header-social li a:hover {
 
 @media only screen and (max-width:768px) {
 	header {
-		background: black;
+		background: rgb(124,139,111);
 		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	}
 
@@ -775,7 +781,7 @@ ul#nav li a {
 	line-height: 38px;
 	text-decoration: none;
 	text-align: left;
-	color: #FFFFFF;
+	color: rgb(124,139,111);			/*header的字體顏色*/
 	position: relative;
 	-moz-transition: color 0.2s ease-in-out;
 	-o-transition: color 0.2s ease-in-out;
@@ -785,7 +791,7 @@ ul#nav li a {
 }
 
 ul#nav li a:hover {
-	color: #fdc501;
+	color: rgb(59, 66, 52); 	/*header觸碰的字體變色*/
 }
 
 ul#nav li a:active {
@@ -793,7 +799,7 @@ ul#nav li a:active {
 }
 
 ul#nav li.current a {
-	color: #fdc501;
+	color: rgb(59, 66, 52);		/*header目前畫面的字體變色*/
 }
 
 ul#nav li.current a:after {
@@ -803,7 +809,7 @@ ul#nav li.current a:after {
 	width: 40px;
 	height: 2px;
 	margin-left: -23px;
-	background-color: white;
+	background-color: rgb(124,139,111);
 	content: '\0020';
 	display: block;
 	-moz-transition: all 0.3s ease-in-out;
@@ -829,7 +835,7 @@ ul#nav li.current a:after {
 	/* mobile-btn and toggle-btn */
 	#nav-wrap > a {
 		border: none;
-		color: #FFFFFF;
+		color: rgb(124,139,111);
 		height: 40px;
 		min-width: 40px;
 		font-size: 12px;
@@ -843,7 +849,7 @@ ul#nav li.current a:after {
 	}
 
 	#nav-wrap > a:hover .menu-icon {
-		background: #FFFFFF;
+		background: rgb(124,139,111);
 	}
 
 	#nav-wrap .menu-icon {
@@ -856,7 +862,7 @@ ul#nav li.current a:after {
 		top: 50%;
 		bottom: auto;
 		left: auto;
-		background: #fdc501;
+		background: rgb(150,164,139);;
 		-moz-transition: all 0.3s ease-in-out;
 		-o-transition: all 0.3s ease-in-out;
 		-webkit-transition: all 0.3s ease-in-out;
@@ -887,7 +893,7 @@ ul#nav li.current a:after {
 
 	/* dropdown nav */
 	#nav-wrap ul#nav {
-		background: #1c212a;
+		background: #1f2a1c;
 		padding: 54px 45px 60px 45px;
 		margin: 0;
 		height: auto;
@@ -924,12 +930,12 @@ ul#nav li.current a:after {
 	}
 
 	#nav-wrap ul#nav li a:hover {
-		color: #FFFFFF;
+		color: rgb(124,139,111);
 	}
 
 	#nav-wrap ul#nav li.current > a {
 		background: none;
-		color: #fdc501;
+		color: rgb(150,164,139);;
 	}
 
 	#nav-wrap ul#nav li.current > a:after {
@@ -979,7 +985,7 @@ ul#nav li.current a:after {
 	width: 100%;
 	text-align: left;
 	position: relative;
-	border-bottom: 1px solid #15191d;
+	border-bottom: 1px solid #ffffff;
 }
 
 #hero-video {
@@ -1011,7 +1017,7 @@ ul#nav li.current a:after {
 	font: 49px/1.3 "raleway-bold", sans-serif;
 	letter-spacing: -1px;
 	padding-bottom: 24px;
-	color: white;
+	color: rgb(122, 122, 122);
 	text-shadow: 0 1px 20px rgba(0, 0, 0, 0.6);
 	position: relative;    
 
@@ -1024,7 +1030,7 @@ ul#nav li.current a:after {
 
 #hero-slider .slides .flex-caption h1::after {
 	display: block;
-	background-color: #fdc501;
+	background-color: rgb(150,164,139);;	/*標題下面的線條*/
 	width: 100px;
 	height: 3px;
 	content: '\0020';
@@ -1035,7 +1041,7 @@ ul#nav li.current a:after {
 
 #hero-slider .slides .flex-caption h3 {
 	font: 18px/1.9 "merriweather-light", sans-serif;
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(122, 122, 122);
 	text-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
 	width: 85%;
 	margin-top: 24px;    
@@ -1241,7 +1247,7 @@ ul#nav li.current a:after {
 }
 
 #hero .flex-control-paging li a.flex-active {
-	background: #fdc501;
+	background: rgb(150,164,139);;	/*首頁的主題圈圈*/
 	cursor: default;
 }
 
@@ -1272,7 +1278,7 @@ ul#nav li.current a:after {
 	height: 54px;
 	width: 200px;
 	border-radius: 3px;
-	background: #e64e04;
+	background: rgb(150,164,139);	/*首頁more about us的按鈕*/
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 	color: #FFFFFF;
 	-moz-transition: all 0.4s ease-on-out;
@@ -1283,8 +1289,8 @@ ul#nav li.current a:after {
 }
 
 #hero #more a:hover {
-	background: #fdc501;
-	color: #000000;
+	background: rgb(123,139,111);	/*首頁more about us的變色*/
+	color: #FFFFFF;
 }
 
 #hero #more a i {
@@ -1304,12 +1310,12 @@ ul#nav li.current a:after {
 
 /** 
 /* 08. =portfolio styles
-/* ===================================================================  第二個 紀錄球員 背景顏色   */
+/* ===================================================================   評鑑準備範本 背景顏色  目前第二層 */
 
 #portfolio {
-	background: #FFC72C; /*湖人的rgb(253, 185, 39);*/
+	background: rgb(240,235,229);
 	padding-top: 120px;
-	border-bottom: 1px solid #FFC72C;  
+	border-bottom: 1px solid rgb(240,235,229);  
 }
 
 #portfolio .row.items {
@@ -1348,6 +1354,67 @@ ul#nav li.current a:after {
 
 #portfolio-wrapper .bgrid {
 	padding: 0;
+}
+
+#portfolio #more a {  /*首頁內容*/
+	font: 18px/54px "raleway-heavy", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+	display: block;
+	height: 54px;
+	width: 220px;
+	border-radius: 3px;
+	background: rgb(0,180,188);	/*首頁詳細範本的按鈕*/
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+	color: #FFFFFF;
+	-moz-transition: all 0.4s ease-on-out;
+	-o-transition: all 0.4s ease-on-out;
+	-webkit-transition: all 0.4s ease-on-out;
+	-ms-transition: all 0.4s ease-on-out;
+	transition: all 0.4s ease-on-out;
+}
+
+#portfolio #more a:hover {
+	background: rgb(0,107,112);	/*首頁詳細範本的變色*/
+	color: #FFFFFF;
+}
+
+/* left right type */
+.portfolio-container1 {
+	width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.portfolio-excel-right {
+	width: 1000px;
+    float: right; /* 圖片在右邊 */
+}
+
+.portfolio-text-left{
+	float: left;
+	width: 430px;
+}
+
+/* left right type */
+.portfolio-container2 {
+	width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.portfolio-bigpicture-left {
+	width: 500px;
+    float: left; 	/* 圖片在左邊 */
+}
+
+.portfolio-fourtext-right{
+	width: 1000px;
+	float: right;
 }
 
 .folio-item .item-wrap {
@@ -1434,7 +1501,7 @@ ul#nav li.current a:after {
 .folio-item .portfolio-item-meta h5 {
 	font: 14px/21px "raleway-bold", sans-serif;
 	letter-spacing: 2px;
-	color: white;
+	color: rgb(225, 225, 225);		/*照片裡面的字體顏色*/
 	margin: 0;
 }
 
@@ -1572,7 +1639,7 @@ ul#nav li.current a:after {
 }
 
 .popup-modal .link-box a:hover {
-	background: #fdc501;
+	background: rgb(0,180,188);
 	color: #000000;
 	border: none;
 }
@@ -1665,13 +1732,13 @@ ul#nav li.current a:after {
 
 /* 
 /* 09. =services
-/* =================================================================== 第三個 紀錄我們的目標 target */
+/* ===================================================================  評鑑相關課程 目前第三層*/
 
 #services {
-	background: #FFC72C;
+	background: rgb(240,235,229);
 	padding-top: 120px;
 	padding-bottom: 120px;
-	border-bottom: 1px solid #FFC72C;
+	border-bottom: 1px solid rgb(240,235,229);
 }
 
 .service-list {
@@ -1749,22 +1816,42 @@ ul#nav li.current a:after {
 
 /* 
 /* 10. =about
-/* =================================================================== 第四個 關於*/
+/* =================================================================== 目前第四層 關於*/
 
 #about {
-	background: #FFC72C;
+	background: rgb(247,247,247);
 	padding-top: 120px;
 	padding-bottom: 120px;
-	border-bottom: 1px solid #FFC72C;
+	border-bottom: 1px solid rgb(247,247,247);
 }
 
 #about h3 {
 	font: 18px/36px "raleway-heavy", sans-serif;
-	color: #fdc501;
+	color: rgb(0,180,188);
 	text-transform: none;
 	letter-spacing: 0;
 	padding: 0;
 	margin-bottom: 6px;
+}
+
+#about #more a {  /*課程按鈕內容*/
+	font: 18px/54px "raleway-heavy", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+	display: block;
+	height: 50px;
+	width: 190px;
+	border-radius: 3px;
+	background: rgb(0,180,188);	/*介紹課程的按鈕*/
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+	color: #FFFFFF;
+	-moz-transition: all 0.4s ease-on-out;
+	-o-transition: all 0.4s ease-on-out;
+	-webkit-transition: all 0.4s ease-on-out;
+	-ms-transition: all 0.4s ease-on-out;
+	transition: all 0.4s ease-on-out;
 }
 
 /* process
@@ -1786,134 +1873,28 @@ ul#nav li.current a:after {
 	background: rgba(0, 0, 0, 0.1);
 }
 
+/* left right type */s
+.about-container1 {
+	width: 1300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about-text-right {
+	width: 300px;
+    float: right;
+}
+
+.about-picture-left {
+	float: left;	 /* 圖片在左邊 */
+	width: 800px;
+	/*margin-right: 50px;*/
+}
+
 @media only screen and (max-width:600px) {
 	.process .bgrid:hover {
 		background: inherit;
-	}
-
-}
-
-/* team members
--------------------------------------------------------------- */
-#about .team {
-	margin-top: 30px;
-}
-
-#team-wrapper {
-	margin: 0 auto;
-}
-
-#team-wrapper .member {
-	margin-bottom: 24px;
-	margin-top: 12px;
-}
-
-#team-wrapper .member h3 {
-	line-height: 24px;
-	margin-bottom: 0;
-}
-
-#team-wrapper .member span {
-	position: relative;
-	font-size: 13px;
-	line-height: 15px;
-	color: #FFFFFF;
-}
-
-#team-wrapper .member-pic {
-	position: relative;
-	line-height: 1;
-	overflow: hidden;
-	background: #FFFFFF;
-}
-
-#team-wrapper .member-pic img {
-	vertical-align: bottom;
-}
-
-#team-wrapper .mask {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(253, 197, 1, 0.5);
-	filter: alpha(opacity=0);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	opacity: 0;
-	zoom: 1;
-	-moz-transition: opacity 0.5s ease-in-out;
-	-o-transition: opacity 0.5s ease-in-out;
-	-webkit-transition: opacity 0.5s ease-in-out;
-	-ms-transition: opacity 0.5s ease-in-out;
-	transition: opacity 0.5s ease-in-out;
-}
-
-#team-wrapper .member:hover .mask {
-	filter: alpha(opacity=100);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	opacity: 1;
-	zoom: 1;
-}
-
-#team-wrapper .member-social {
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 18px;
-	color: #969696;
-	margin: 0;
-	padding: 0;
-}
-
-#team-wrapper .member-social li {
-	display: inline-block;
-	margin-right: 15px;
-}
-
-#team-wrapper .member-social li a {
-	color: #FFFFFF;
-}
-
-/* media queries:  
-/* .team / #team-wrapper */
-
-@media only screen and (max-width:1024px) {
-	#team-wrapper .member-social li {
-		margin-right: 10px;
-	}
-
-}
-
-@media only screen and (max-width:768px) {
-	#team-wrapper .member p {
-		font-size: 14px;
-		line-height: 27px;
-	}
-
-}
-
-@media only screen and (max-width:600px) {
-	#team-wrapper .member-pic {
-		width: 80px;
-		height: 80px;
-		float: left;
-		margin-right: 30px;
-		position: relative;
-		top: 6px;
-	}
-
-	#team-wrapper .member-pic .mask {
-		display: none;
-	}
-
-	#team-wrapper .member-name + p {
-		clear: both;
-		margin-top: 30px;
-	}
-
-	#team-wrapper .member p {
-		font-size: 16px;
-		line-height: 30px;
 	}
 
 }
@@ -1974,7 +1955,7 @@ ul#nav li.current a:after {
 	padding: 0 30px;
 	max-width: 400px;
 	width: 100%;
-	background: #e64e04;
+	background: rgb(0,180,188);
 	border-radius: 3px;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 	margin: 24px auto 0;
@@ -2020,171 +2001,6 @@ ul#nav li.current a:after {
 
 	#call-to-action p {
 		font: 16px/30px "merriweather-light", serif;
-	}
-
-}
-
-
-/** 
-/* 11. =testimonials
-/* =================================================================== */
-
-#testimonials {
-	background: #e4b101;
-	padding-top: 90px;
-	padding-bottom: 112px;
-	position: relative;
-	min-height: 198px;
-	width: 100%;
-	overflow: hidden;
-	text-align: center;
-}
-
-#testimonials .flex-container {
-	width: 80%;
-	max-width: 850px;
-	margin: 0 auto;
-}
-
-#testimonial-slider {
-	margin: 0 0 30px 0px;
-	padding-left: 0;
-	position: relative;
-}
-
-#testimonial-slider p {
-	font: 27px/1.9 "merriweather-regular", sans-serif;
-	color: #FFFFFF;
-	padding: 0;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-}
-
-#testimonial-slider .testimonial-author {
-	display: block;
-	font: 16px/24px "raleway-heavy", sans-serif;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	margin-top: 24px;
-	color: #FFFFFF;
-}
-
-#testimonial-slider .testimonial-author img {
-	width: 72px;
-	height: 72px;
-	margin-right: 10px;
-	display: inline-block;
-	border-radius: 50%;
-	border: 6px solid white;
-	vertical-align: middle;
-}
-
-#testimonial-slider .testimonial-author .author-info {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: left;
-}
-
-#testimonial-slider .testimonial-author .author-info span {
-	display: block;
-	font: 14px/18px "raleway-bold", sans-serif;
-	letter-spacing: 0;
-	text-transform: none;
-	color: rgba(0, 0, 0, 0.6);
-}
-
-/* control nav */
-#testimonials .flex-control-nav {
-	width: 100%;
-	text-align: center;
-	display: block;
-	position: absolute;
-	bottom: -72px;
-}
-
-#testimonials .flex-control-nav li {
-	margin: 0 6px;
-	display: inline-block;
-	zoom: 1;
-}
-
-#testimonials .flex-control-paging li a {
-	width: 12px;
-	height: 12px;
-	display: block;
-	background: white;
-	cursor: pointer;
-	text-indent: -9999px;
-	border-radius: 20px;
-}
-
-#testimonials .flex-control-paging li a:hover {
-	background: #CCC;
-	background: rgba(0, 0, 0, 0.5);
-}
-
-#testimonials .flex-control-paging li a.flex-active {
-	background: #fff;
-	background: black;
-	cursor: default;
-}
-
-/* media queries:
-/* #testimonials / #testimonial-slider */
-
-@media only screen and (max-width:1024px) {
-	#testimonials .flex-container {
-		max-width: 700px;
-	}
-
-	#testimonial-slider p {
-		font: 25px/1.9 "merriweather-regular", sans-serif;
-	}
-
-}
-
-@media only screen and (max-width:768px) {
-	#testimonials .flex-container {
-		width: 90%;
-	}
-
-	#testimonial-slider p {
-		font: 22px/1.9 "merriweather-regular", sans-serif;
-	}
-
-}
-
-@media only screen and (max-width:600px) {
-	#testimonials .flex-container {
-		width: 95%;
-	}
-
-	#testimonial-slider p {
-		font: 20px/1.9 "merriweather-regular", sans-serif;
-	}
-
-	#testimonial-slider .testimonial-author {
-		font: 14px/24px "raleway-heavy" sans-serif;
-	}
-
-	#testimonial-slider .testimonial-author img {
-		width: 60px;
-		height: 60px;
-		border: 6px solid white;
-	}
-
-	#testimonial-slider .testimonial-author .author-info span {
-		font: 12px/18px "raleway-bold", sans-serif;
-	}
-
-}
-
-@media only screen and (max-width:400px) {
-	#testimonials .flex-container {
-		width: auto;
-	}
-
-	#testimonial-slider p {
-		font: 18px/1.9 "merriweather-regular", sans-serif;
 	}
 
 }
@@ -2451,7 +2267,7 @@ footer {
 	padding-top: 60px;
 	padding-bottom: 24px;
 	position: relative;
-	color: rgba(255, 255, 255, 0.15);
+	color: rgba(150, 164, 139, 0.85);  /*最底下jubo字樣*/
 }
 
 footer .content {
@@ -2474,7 +2290,7 @@ footer hr {
 	margin-bottom: 30px;
 	max-width: 400px;
 	width: 80%;
-	border-top: 1px solid rgba(150, 150, 150, 0.1);
+	border-top: 1px solid rgba(150, 150, 150, 0.5); 	/*最底下隔線字樣*/
 }
 
 footer .info {
@@ -2529,11 +2345,11 @@ footer .social-links li {
 }
 
 footer .social-links li a {
-	color: rgba(255, 255, 255, 0.1);
+	color: rgba(150,164,139,0.6);		 /*最底下連結格子字樣*/
 }
 
 footer .social-links li a:hover {
-	color: white;
+	color: rgba(123,139,111,0.6);
 }
 
 footer .social-links li:first-child {
@@ -2602,7 +2418,7 @@ footer .social-links li:first-child {
 	height: 54px;
 	width: 200px;
 	margin-left: -100px;
-	background: #e64e04;
+	background: rgb(150,164,139);
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 	color: #FFFFFF;
 	text-align: center;
@@ -2618,8 +2434,8 @@ footer .social-links li:first-child {
 }
 
 #go-top a:hover {
-	background: #fdc501;
-	color: #000000;
+	background: rgb(123,139,111);
+	color: #FFFFFF;
 }
 
 #go-top a i {
