@@ -935,7 +935,7 @@ ul#nav li.current a:after {
 
 	#nav-wrap ul#nav li.current > a {
 		background: none;
-		color: rgb(150,164,139);;
+		color: rgb(150,164,139);
 	}
 
 	#nav-wrap ul#nav li.current > a:after {
@@ -1310,7 +1310,7 @@ ul#nav li.current a:after {
 
 /** 
 /* 08. =portfolio styles
-/* ===================================================================   評鑑準備範本 背景顏色  目前第二層 */
+/* ===================================================================    背景顏色  目前第二層 */
 
 #portfolio {
 	background: rgb(240,235,229);
@@ -1390,13 +1390,15 @@ ul#nav li.current a:after {
 }
 
 .portfolio-excel-right {
-	width: 1000px;
+	width: 450px;
     float: right; /* 圖片在右邊 */
+	margin-right: 150px;
 }
 
 .portfolio-text-left{
 	float: left;
-	width: 430px;
+	width: 500px;
+	margin-right: -100px;
 }
 
 /* left right type */
@@ -1771,7 +1773,7 @@ ul#nav li.current a:after {
 
 #services .service-list h3 {
 	font: 25px/36px "raleway-heavy", sans-serif;
-	color: #1D428A;		/*底下各個主題名稱*/
+	color: rgb(63, 122, 190);/*底下各個主題名稱*/
 	padding: 0;
 	text-transform: none;
 	text-align: left;
@@ -1819,18 +1821,18 @@ ul#nav li.current a:after {
 /* =================================================================== 目前第四層 關於*/
 
 #about {
-	background: rgb(247,247,247);
+	background: rgb(240,235,229);
 	padding-top: 120px;
 	padding-bottom: 120px;
 	border-bottom: 1px solid rgb(247,247,247);
 }
 
 #about h3 {
-	font: 18px/36px "raleway-heavy", sans-serif;
-	color: rgb(0,180,188);
-	text-transform: none;
-	letter-spacing: 0;
+	font: 25px/36px "raleway-heavy", sans-serif;
+	color: rgb(63, 122, 190);		/*底下各個主題名稱*/
 	padding: 0;
+	text-transform: none;
+	text-align: left;
 	margin-bottom: 6px;
 }
 
@@ -1889,6 +1891,19 @@ ul#nav li.current a:after {
 .about-picture-left {
 	float: left;	 /* 圖片在左邊 */
 	width: 800px;
+	/*margin-right: 50px;*/
+}
+
+.about-picture-motion1 {
+	display: block; 
+    margin: 0 auto;
+	width: 700px;
+	/*margin-right: 50px;*/
+}
+
+.about-picture-motion23 {
+	float: left;
+	width: 500px;
 	/*margin-right: 50px;*/
 }
 
