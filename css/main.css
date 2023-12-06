@@ -1366,7 +1366,7 @@ ul#nav li.current a:after {
 	height: 54px;
 	width: 220px;
 	border-radius: 3px;
-	background: rgb(0,180,188);	/*首頁詳細範本的按鈕*/
+	background: rgb(150,164,139);	/*首頁詳細範本的按鈕*/
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 	color: #FFFFFF;
 	-moz-transition: all 0.4s ease-on-out;
@@ -1403,7 +1403,7 @@ ul#nav li.current a:after {
 
 /* left right type */
 .portfolio-container2 {
-	width: 1200px;
+	width: 1000px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1837,7 +1837,7 @@ ul#nav li.current a:after {
 }
 
 #about #more a {  /*課程按鈕內容*/
-	font: 18px/54px "raleway-heavy", sans-serif;
+	font: 16px/54px "raleway-heavy", sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -1846,7 +1846,7 @@ ul#nav li.current a:after {
 	height: 50px;
 	width: 190px;
 	border-radius: 3px;
-	background: rgb(0,180,188);	/*介紹課程的按鈕*/
+	background: rgb(150,164,139);	/*介紹課程的按鈕*/
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 	color: #FFFFFF;
 	-moz-transition: all 0.4s ease-on-out;
@@ -1854,6 +1854,11 @@ ul#nav li.current a:after {
 	-webkit-transition: all 0.4s ease-on-out;
 	-ms-transition: all 0.4s ease-on-out;
 	transition: all 0.4s ease-on-out;
+}
+
+#about #more a:hover {
+	background: rgb(123,139,111);	/*首頁詳細範本的變色*/
+	color: #FFFFFF;
 }
 
 /* process
